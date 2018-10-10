@@ -1,0 +1,18 @@
+// Import your components CSS files here.
+@import "alert";
+@import "navbar";
+@import "banner";
+@import "button";
+@import "form";
+@import "modal";
+@import "card";
+@import "politician-card";
+@import "grid";
+@import "twitter";
+@import "league-table";
+@import "table";
+@import "rules-modal";
+
+h1,h2,h3{
+  font-weight: lighter;
+}

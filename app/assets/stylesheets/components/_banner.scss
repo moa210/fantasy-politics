@@ -1,0 +1,36 @@
+.banner {
+  min-height: calc(100vh - 112px);
+  text-align: center;
+  h1 {
+      color: white;
+      font-size: 56px;
+      font-weight: bold;
+      margin-top: 16px;
+      letter-spacing: 28px;
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 1.5px;
+      margin: 0;
+      font-family: "PT Sans", sans-serif;
+    }
+    #skyline {
+      width: 100vw;
+      margin-top: -100px;
+    }
+    #skyline-signed-in {
+      width: 100vw;
+      margin-top: -30px;
+      margin-bottom: 72px;
+    }
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

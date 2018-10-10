@@ -1,0 +1,23 @@
+document.getElementById("politician<%= @politician_id %>").innerHTML = "<%= j render 'politician.html.erb', politician: @politician, political_party: @political_party %>"
+
+$('.politician-image').on('click', function (event) {
+  console.log(event.currentTarget)
+  let className = event.currentTarget.parentNode.parentNode.className.split(" ")[1]
+  $(`.${className}`).toggleClass('flipped');
+});
+
+$('.back').on('click', function (event) {
+  console.log(event.currentTarget.parentNode)
+  let className = event.currentTarget.parentNode.className.split(" ")[1]
+  $(`.${className}`).toggleClass('flipped');
+});
+
+document.querySelector(".party-full-banner").dataset.ben = `<%= @num_of_politicians %>`
+
+
+
+if (document.querySelector(".party-full-banner").dataset.ben >= 7) {
+  document.querySelector(".party-full-banner").style.display = "block";
+} else {
+  document.querySelector(".party-full-banner").style.display = "none";
+}

@@ -1,0 +1,39 @@
+<h2>My politicial parties</h2>
+
+<div class="button-padding">
+  <%= link_to "Add party", new_political_party_path, class: 'main-button modal-button'%>
+  </div>
+<% current_user.political_parties.each do |party| %>
+  <%= link_to political_party_path(party) do %>
+<div>
+    <aside class="sidebar-left3">
+    </aside>
+
+    <article>
+      <div class="grid-container">
+        <div>
+          <p class="party-members">
+            <%= party.name.upcase %>
+          </p>
+          <p class="party-members-count">
+            <%= party.politicians.count %>
+            party members
+          </p>
+        </div>
+        <div>
+          <p class="score">
+            SCORE
+          </p>
+          <p class="score-number">
+            <%= party.score %>
+          </p>
+        </div>
+      </div>
+    </article>
+    <aside class="sidebar-right3">
+      <p>
+      </p>
+    </aside>
+</div>
+<% end %>
+<% end %>

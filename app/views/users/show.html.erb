@@ -1,0 +1,58 @@
+<h2>Hello <%= current_user.username.capitalize%></h2>
+
+
+<div class="grid-container1">
+  <div class="item1">
+  </div>
+
+  <div class="item2"><div class="user-profile-photo" style= "background-image: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.6) 90%), url(<%= cl_image_path current_user.cl_photo %>);">
+    </div>
+  </div>
+  <div class="item3">
+    <div class="allign-left">
+      <p>You've created
+        <%  a = current_user.political_parties.count %>
+        <% if  a == 1 %>
+         <%= a %> party.
+        <% else %>
+          <%= a %> parties.
+        <% end %>
+      </p>
+        <% counter = 0 %>
+      <%  current_user.political_parties.each do |party| %>
+        <p>
+          <% counter += 1 %>
+          <%= link_to political_party_path(party) do %>
+          <%= counter %>.
+          <%= party.name.upcase %>
+          <% end %>
+        </p>
+      <% end %>
+      <% current_user.political_parties.each do |party| %>
+        <% unless party.league_connections == [] %>
+        <p>You belong to
+          <% a = party.league_connections.count  %>
+
+          <% if  a == 1%>
+           <%= a %> league.
+          <% else %>
+            <%= a %> leagues.
+          <% end %>
+        </p>
+          <% party.league_connections.each do |connection| %>
+            <%= link_to league_path(connection.league) do %>
+              <p><%= connection.league.name %></p>
+            <% end %>
+          <% end %>
+        <% end %>
+        <% end %>
+      </div>
+    </div>
+  <div class="item4">
+  </div>
+  <div class="item5">
+    <p class="allign-left">Your email address:
+    <%= current_user.email %></p>
+  </div>
+</div>
+

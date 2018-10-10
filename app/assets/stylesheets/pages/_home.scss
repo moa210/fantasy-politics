@@ -1,0 +1,44 @@
+// .homepage-container {
+//   margin-top: 70px;
+// }
+
+.main-button {
+  color: rgba(255,255,255,0.9);
+}
+
+#login-button {
+  padding: 6px 12px;
+  box-shadow: none;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.login-button:active {
+  background-color: #b44550;
+  box-shadow: none;
+  transform: none;
+}
+
+.home-button {
+  margin: 26px 0px;
+
+}
+
+.standard-container {
+  margin-top: 70px;
+}
+
+#signed-in-img {
+  margin-top: 100px;
+}
+
+#search-bar {
+  width: 50%;
+  text-align:center;
+  color:white;
+  margin: 0 auto;
+    .form-control {
+    background-color:#292929;
+    color:#d5d5d5;
+  }
+}

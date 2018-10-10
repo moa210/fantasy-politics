@@ -1,0 +1,91 @@
+#myModal {
+  // margin-top: 24px;
+  padding: 0;
+  h3 {
+    color: rgba(255,255,255,0.85);
+  }
+}
+
+#myModal2 {
+  margin-top: 120px;
+  h3 {
+    color: rgba(255,255,255,0.85);
+  }
+}
+
+.my-modal-content {
+  background-color: $app-gray;
+  border-radius: 5px;
+  height: 670px;
+  width: 450px;
+}
+
+#user_photo{
+  opacity: 0.3;
+  display: flex;
+  font-weight: lighter;
+}
+.my-modal2-content {
+  background-color: $app-gray;
+  border-radius: 5px;
+  height: 390px;
+  width: 450px;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-modal-title {
+  margin-top: 28px;
+}
+
+.my-modal-body {
+  position: relative;
+}
+
+.my-modal-dialog {
+}
+
+input.login-form-input {
+  background-color: $app-gray;
+}
+
+.modal-button {
+  box-shadow: none;
+  margin-top: 10px;
+}
+
+.modal-button:active {
+  background-color: #b44550;
+  box-shadow: none;
+  transform: none;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-form-inputs {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.modal-custom-form-group {
+  height: 72px;
+  margin-bottom: 22px;
+}
+
+.cross {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: white;
+  opacity: 0.4;
+}
+
+.cross:hover {
+  color: rgba(255,255,255,0.2);
+  text-shadow: none;
+}
