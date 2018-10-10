@@ -13,12 +13,12 @@ class User < ApplicationRecord
   has_many :leagues, through: :user_league_connections
 
 
-  include AlgoliaSearch
+  # include AlgoliaSearch
 
-  algoliasearch do
-    # attribute :first_name, :last_name, :email, :username
+  # algoliasearch do
+  #   # attribute :first_name, :last_name, :email, :username
 
-  end
+  # end
 # if no photo uploded will display from stock photos
   def cl_photo
       if photo?

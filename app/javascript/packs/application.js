@@ -2,19 +2,19 @@ import "bootstrap";
 
 // extrenal search for searchbar
 
-AlgoliaSearch.configuration = {
-  application_id: 'Y6BJDF6ZNO',
-  api_key: '79f7cf05865c8da9a5bc525f18c227bd',
-  index_name: 'fantasy_politics'
-}
+// AlgoliaSearch.configuration = {
+//   application_id: 'Y6BJDF6ZNO',
+//   api_key: '79f7cf05865c8da9a5bc525f18c227bd',
+//   index_name: 'fantasy_politics'
+// }
 
-$(document).change(function() {
-  if (document.querySelector(".party-full-banner").dataset.ben >= 8) {
-  document.querySelector(".party-full-banner").style.display = "block";
-} else {
-  document.querySelector(".party-full-banner").style.display = "none";
-}
-});
+// $(document).change(function() {
+//   if (document.querySelector(".party-full-banner").dataset.ben >= 8) {
+//   document.querySelector(".party-full-banner").style.display = "block";
+// } else {
+//   document.querySelector(".party-full-banner").style.display = "none";
+// }
+// });
 
 // alert timeOut function
   document.addEventListener("DOMContentLoaded", () => {

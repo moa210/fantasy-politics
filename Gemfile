@@ -23,7 +23,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-gem "algoliasearch-rails"
+# gem "algoliasearch-rails"
 gem 'jquery-rails'
 gem 'hogan_assets'
 gem "letter_opener", group: :development

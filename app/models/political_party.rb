@@ -6,11 +6,11 @@ class PoliticalParty < ApplicationRecord
   has_many :politician_links
   has_many :politicians, through: :politician_links
 
-  include AlgoliaSearch
+  # include AlgoliaSearch
 
-  algoliasearch do
+  # algoliasearch do
 
-  end
+  # end
   # if no photo uploded will display from stock photos
   def cl_photo
       if photo?

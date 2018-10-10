@@ -11,9 +11,9 @@ class League < ApplicationRecord
     return self.user
   end
 
-  include AlgoliaSearch
+  # include AlgoliaSearch
 
-  algoliasearch do
+  # algoliasearch do
 
-  end
+  # end
 end
